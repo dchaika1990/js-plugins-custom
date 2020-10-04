@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1cd932ff-0795-4c4d-800c-416d72f9341d" name="Default Changelist" comment="">
+    <list default="true" id="1cd932ff-0795-4c4d-800c-416d72f9341d" name="Default Changelist" comment="add close events + add method destroy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plugins/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/modal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,11 +56,42 @@
       <updated>1601753980208</updated>
       <workItem from="1601753981276" duration="5488000" />
       <workItem from="1601823530497" duration="210000" />
-      <workItem from="1601823775952" duration="1877000" />
+      <workItem from="1601823775952" duration="2142000" />
+      <workItem from="1601836727305" duration="4673000" />
     </task>
+    <task id="LOCAL-00001" summary="add close events + add method destroy">
+      <created>1601826567540</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601826567541</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add close events + add method destroy" />
+    <option name="LAST_COMMIT_MESSAGE" value="add close events + add method destroy" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="277" y="130" width="802" height="528" key="Vcs.Push.Dialog.v2" timestamp="1601826570911">
+      <screen x="0" y="29" width="1366" height="739" />
+    </state>
+    <state x="277" y="130" width="802" height="528" key="Vcs.Push.Dialog.v2/0.29.1366.739/1366.0.1280.1024@0.29.1366.739" timestamp="1601826570911" />
   </component>
 </project>
