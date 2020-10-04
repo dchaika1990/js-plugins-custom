@@ -37,23 +37,35 @@ function _createModal(options) {
 $.modal = function (options) {
     const ANIMATION_SPEED = 200
     const $modal = _createModal(options)
+    const $modalClose = $modal.querySelector('.modal-close')
+    const $modalWindow = $modal.querySelector('.modal-window')
+    const $modalOverlay = $modal.querySelector('.modal-overlay')
     let closing = false
+    const _close = () => {
+        if (!options.closable) return;
+        closing = true
+        $modal.classList.remove('open')
+        $modal.classList.add('hide')
+        setTimeout(()=>{
+            $modal.classList.remove('hide')
+            closing = false
+        }, ANIMATION_SPEED)
+    }
 
-    console.log(this)
+    $modalClose.addEventListener('click', _close)
+    $modalWindow.addEventListener('click', (e) => e.stopPropagation())
+    $modalOverlay.addEventListener('click', _close)
     return {
         open(){
             !closing && $modal.classList.add('open')
         },
         close(){
-            if (!options.closable) return ;
-            closing = true
-            $modal.classList.remove('open')
-            $modal.classList.add('hide')
-            setTimeout(()=>{
-                $modal.classList.remove('hide')
-                closing = false
-            }, ANIMATION_SPEED)
+            _close()
         },
-        destroy(){}
+        destroy(){
+            $modalClose.removeEventListener('click', _close)
+            $modalWindow.removeEventListener('click', (e) => e.stopPropagation())
+            $modalOverlay.removeEventListener('click', _close)
+        }
     }
 }
