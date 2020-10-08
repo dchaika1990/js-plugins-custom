@@ -54,7 +54,7 @@ function _createModal(options) {
 * setContent(html: string): void | public
 * onClose(): void
 * onOpen(): void
-*
+* beforeClose(): boolean
  */
 $.modal = function (options) {
     const ANIMATION_SPEED = 200
@@ -74,6 +74,9 @@ $.modal = function (options) {
             setTimeout(()=>{
                 $modal.classList.remove('hide')
                 closing = false
+                if (typeof options.onClose === 'function') {
+                    options.onClose()
+                }
             }, ANIMATION_SPEED)
         },
     }
